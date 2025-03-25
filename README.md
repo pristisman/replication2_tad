@@ -7,23 +7,16 @@ The latest pre-print can be found [here](https://www.cambridge.org/core/services
 
 ## Code
 
-The code can be found in the xxx.qmd file. (The script reads in data from this repository as is, and no change in directory is needed.)
-
-## Codes
-
-code_graph_theory.r: this code replicates the figure 1a of the paper.
-
-analysis_discontinuity.r: this code replicates the discontinuity analysis for the case of Brazil. The code for other countries are equivalent, but with different data sources and ids for the communities.
+The code is located in the `replication.qmd` file. Ensure that the data is placed in the same working directory as the code, or adjust the working directory accordingly within the script to ensure it runs properly.
 
 ## Data
 
-The code uses the bigrame.Rdata file (quantitative data on speeches) found in the same directory, as well as the raw speech data (the code access speech CSVs in a folder titled "speeches_by_parliament"), which should be placed in the same directory in the folder with the same name. The raw speeches data was too large to push to this repository, and can be found at this link: https://andy.egge.rs/eggers_spirling_database.html
+The code utilizes a corpus of police reports, which you can download [here](https://georgetown.box.com/s/q2bj0g830oyg9dlp69optsve2zh37z5j). Due to the file's large size, it cannot be uploaded to the repository. We recommend cloning the repository and downloading the dataset separately, then placing it in the appropriate folder to ensure the code runs smoothly.
 
 ## Report
 
 Our report on our replication and additions can be found in the "Report" folder. The document details our methods, results, differences and similarties, an autopsy of our results, and possible extensions for the original paper.
 
-## Other resources
+## Presentation
 
-The "Original Paper" folder contains the full article by Spirling, as well as the author's replication code and materials. The Harvard Dataverse page for this paper can be found here: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EZBYBZ
-The "Presentation" folder contains a PDF of our presentation, which was created using Overleaf
+Our replication exercise presentation is available in the "Presentation" folder, which contains a PDF of the slides.
