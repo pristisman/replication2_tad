@@ -25,3 +25,9 @@ Our report on our replication and additions can be found in the "Report" folder.
 ## Presentation
 
 Our replication exercise presentation is available in the "Presentation" folder, which contains a PDF of the slides.
+
+## References
+
+JASSAL N. Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women’s Cases in India. American Political Science Review. 2024;118(3):1278-1304. doi:10.1017/S0003055423000916
+
+Jassal, Nirvikar, 2023, "Replication Data for: Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women's Cases in India", https://doi.org/10.7910/DVN/F6UCQT, Harvard Dataverse, V1
