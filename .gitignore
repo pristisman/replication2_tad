@@ -11,3 +11,14 @@ replication_material/part2.R
 replication_material/README.rtf
 replication_material/supplementary_material_part1.pdf
 replication_material/supplementary_material_part2.pdf
+.DS_Store
+Code/.DS_Store
+Code/data_file1.csv
+Code/data_file2.csv
+Code/part1.R
+Code/part2.R
+Code/README.rtf
+Code/supplementary_material_part1.pdf
+Code/supplementary_material_part2.pdf
+replication_material/.DS_Store
+Report/.DS_Store
