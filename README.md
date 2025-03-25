@@ -1,5 +1,5 @@
 # Replication Exercise "Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women's Cases in India"
-This repository contains the materials for our attempted replication of outcomes and code from Nirvikar Jassa "Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women's Cases in India", 2023
+This repository contains the materials for our replication of some of the findings from Nirvikar Jassa's 2023 study, *"Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women's Cases in India."*
 
 <details>
 <summary><strong>Abstract</strong></summary>  
