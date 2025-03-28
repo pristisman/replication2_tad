@@ -14,25 +14,27 @@ This paper investigates whether women face disadvantages in accessing justice in
 
 The research leverages a dataset of approximately 418,190 police reports from Haryana (2015–2018), merged with 251,804 judicial records. The methodology incorporates descriptive statistics to quantify gender-based disparities at various stages of the justice process, OLS regression analysis to examine the relationship between complainant gender and justice outcomes, and Structural Topic Modeling (STM) to analyze first-person testimonies in police reports. This approach helps identify the themes and severity of cases, particularly those involving violence against women. Additionally, Topical Inverse Regression Matching (TIRM) is employed to adjust for confounding factors by matching complaints based on text similarity, allowing the study to infer the causal impact of gender on case outcomes.
 
-Our project aims to replicate the Topic Modeling portion of this study, focusing specifically on the Structural Topic Modeling (STM) models, both with and without the inclusion of FREX measures. We also add XXXX
+Our project aims to replicate the Topic Modeling portion of this study, focusing specifically on the Structural Topic Modeling (STM) models, both with and without the inclusion of FREX measures. 
 
-## Differences & Similarities
-
-## Autopsy
-
-## Data Retrieval
-
-### Replication Challenges
-
-### Replication Successes
 
 ## Extension
 
-### Suggested Improvements
+In our extensions, we analyzed the words used by men and women when filing a crime report to the police, examining whether these words differ, how frequently they are used, and in what context. The goal of this analysis is to identify gender-based differences in language within specific topics of police reports. For example, within reports related to alcohol, we found that men are more likely to use the word *accident*, while women more commonly use the word *abuse*. This is a particularly interesting finding because it highlights the existence of gender-based differences in how crimes are reported and how they may impact differently in women and men, which definitely has important policy implications. We also found cases where the words used within a topic do not vary significantly between genders or provide particularly insightful distinctions.
 
--   Easier to access raw data: One of our primary challenges was finding the raw speech data Spirling used in his analysis. Adding this to the Harvard Dataverse repository would be a welcome update, and could help future researchers replicate and innovate at a much easier rate.
 
--   
+## Autopsy
+
+### Replication Challenges
+
+The code lacked sufficient comments and annotations, making it somewhat difficult to follow and replicate. However, all the code was functioning correctly.  
+
+Additionally, the corpus is in Hindi, and the translation to English occurs at some point, but it is not entirely clear where or how this process takes place.
+
+### Replication Successes
+
+The code ran smoothly, allowing us to replicate the STM models and figures successfully, ultimately arriving at the same results.
+
+The extensions were not difficult to implement, and we obtained interesting results that can easily be expanded to other topics. We only produced extensions for a few selected topics, as running them for the entire dataset is very computationally expensive and takes a lot of time to get results.
 
 ## References
 

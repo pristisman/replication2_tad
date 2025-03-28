@@ -25,7 +25,7 @@ install.packages("qdapDictionaries")
 install.packages("SnowballC")
 install.packages("stm")
 
-library(readr);library(ggplot2);library(stringr);library(plyr);
+library(readr);library(ggplot2);library(stringr);library(dplyr);
 library(splitstackshape);library(data.table);library(dplyr);library(cowplot);library(Jmisc);library(psych);library(qwraps2);library(xtable);library(sandwich);library(stargazer);library(lmtest);library(ggpubr);library(multiwayvcov)
 library(wordcloud);library(stm);library(readxl)
 library(ggplotify);library(ggraph);library(tidygraph); library(here)
