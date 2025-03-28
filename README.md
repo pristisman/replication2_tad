@@ -12,7 +12,7 @@ The paper can be found [here](https://www.cambridge.org/core/services/aop-cambri
 
 ## Code
 
-The code is located in the `replication.qmd` file. Ensure that the data is placed in the same working directory as the code, or adjust the working directory accordingly within the script to ensure it runs properly.
+The code is located in the `replication.r` file. Ensure that the data is placed in the same working directory as the code, or adjust the working directory accordingly within the script to ensure it runs properly.
 
 ## Data
 
