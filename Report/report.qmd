@@ -1,6 +1,6 @@
 ---
 title: "Replication Exercise: Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women's Cases in India"
-author: "Chuchu Wen | Priscila Stisman"
+author: "Chuchu Wan | Priscila Stisman"
 format: pdf
 editor: visual
 toc: false
@@ -12,7 +12,7 @@ This report details our efforts to replicate specific code and outcomes Nirvikar
 
 This paper investigates whether women face disadvantages in accessing justice in India compared to men, focusing on the entire trajectory of cases from police registration to judicial verdicts. The study identifies a pattern of "multi-stage" discrimination against women within the justice system, including delays, reduced chances of cases reaching court, and lower conviction rates for crimes reported by women. By examining these disparities, the study seeks to shed light on how gender influences the outcomes of legal proceedings.
 
-The research leverages a dataset of approximately 418,190 police reports from Haryana (2015–2018), merged with 251,804 judicial records. The methodology incorporates descriptive statistics to quantify gender-based disparities at various stages of the justice process, OLS regression analysis to examine the relationship between complainant gender and justice outcomes, and Structural Topic Modeling (STM) to analyze first-person testimonies in police reports. This approach helps identify the themes and severity of cases, particularly those involving violence against women. Additionally, Topical Inverse Regression Matching (TIRM) is employed to adjust for confounding factors by matching complaints based on text similarity, allowing the study to infer the causal impact of gender on case outcomes.
+The research leverages a dataset of 418,190 police reports from Haryana (2015–2018), merged with 251,804 judicial records. The methodology incorporates descriptive statistics to quantify gender-based disparities at various stages of the justice process, OLS regression analysis to examine the relationship between complainant gender and justice outcomes, and Structural Topic Modeling (STM) to analyze first-person testimonies in police reports. This approach helps identify the themes and severity of cases, particularly those involving violence against women. Additionally, Topical Inverse Regression Matching (TIRM) is employed to adjust for confounding factors by matching complaints based on text similarity, allowing the study to infer the causal impact of gender on case outcomes.
 
 Our project aims to replicate the Topic Modeling portion of this study, focusing specifically on the Structural Topic Modeling (STM) models, both with and without the inclusion of FREX measures.
 
@@ -22,16 +22,25 @@ Our project aims to replicate the Topic Modeling portion of this study, focusing
 
 The code ran smoothly, allowing us to replicate the STM models and figures successfully, ultimately arriving at the same results. We could even ran some STM models that were included in the code but not in the paper.
 
-The extensions were straightforward to implement, yielding interesting results that can be easily applied to other topics. Due to the high computational cost and long processing time, we focused on a few selected topics rather than the entire dataset. Nonetheless, we believe these extensions are highly valuable and could be incorporated into the paper as a next step. They provide important insights into gender disparities within the same crimes, as evidenced by the different words men and women use when referring to the same crime topics.
-
 ### Replication Challenges
 
-The code lacked sufficient comments and annotations, making it somewhat difficult to follow and replicate. However, all the code was functioning correctly. Additionally, the corpus is in Hindi, and the translation to English occurs at some point, but it is not entirely clear where or how this process takes place.
+The code lacked sufficient comments and annotations, making it challenging to follow and replicate. Additionally, while the corpus is in Hindi, the process for translating it into English is not clearly explained. Providing more detailed documentation and clarifying the translation methodology would enhance readability and usability.
 
 ## Extension
 
-In our extensions, we analyzed the words used by men and women when filing a crime report to the police, examining whether these words differ, how frequently they are used, and in what context. The goal of this analysis is to identify gender-based differences in language within specific topics of police reports. For example, within reports related to alcohol, we found that men are more likely to use the word *accident*, while women more commonly use the word *abuse*. This is a particularly interesting finding because it highlights the existence of gender-based differences in how crimes are reported and how they may impact differently in women and men, which has important policy implications. We also found cases where the words used within a topic do not vary significantly between genders or provide particularly insightful distinctions.
+In our extensions, we analyzed the words used by men and women when filing a crime report to the police, examining whether these words differ, how frequently they are used, and in what context. By default, the plots display only the top 15 words[^1].
+
+[^1]: This setting can be adjusted in the code to show more or fewer words.
+
+The goal of this analysis is to uncover gender-based differences in language within specific crime-related topics. For instance, in reports related to alcohol, we found that men are more likely to use the word *accident*, while women more commonly use the word *abuse*. This is a particularly compelling finding, as it highlights how crime reports may reflect different experiences and concerns based on gender—an insight with significant policy implications. At the same time, we observed cases where word usage within a topic did not vary substantially between genders or provide meaningful distinctions.
+
+The extensions were straightforward to implement, yielding interesting results that can be easily applied to other topics. Due to the high computational cost and long processing time, we focused on a few selected topics rather than in all of them.
+
+We believe these extensions add substantial value and could be incorporated into the paper as a next step. They offer critical insights into gender disparities in crime reporting, shedding light on how men and women describe similar crimes differently and the potential implications for policy and law enforcement practices.
 
 ## References
 
-Jassal, N. (2024). Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women’s Cases in India. American Political Science Review, 118(3), 1278-1304. [Replication Data](https://doi.org/10.7910/DVN/F6UCQT). [https://doi.org/10.1017/S0003055423000916](https://doi.org/10.1017/S0003055423000916https://doi.org/10.1017/S0003055423000916)
+Jassal, N. (2024). Does Victim Gender Matter for Justice Delivery? Police and Judicial Responses to Women’s Cases in India. American Political Science Review, 118(3), 1278-1304. [Replication Data](https://doi.org/10.7910/DVN/F6UCQT).
+
+\
+Roberts, M. E., Stewart, B. M., & Tingley, D. (2019). *stm: R package for structural topic models*. Journal of Statistical Software, 91(2), 1–40. https://doi.org/10.18637/jss.v091.i02
